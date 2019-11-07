@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="" type="image/x-icon">
+    <title>Hệ thống lịch thực hành - CIT</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+    <link rel="stylesheet" href="../lib/multiselect/multiselect.css">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/datatable/material.min.css">
+    <link rel="stylesheet" href="../lib/datatable/dataTables.material.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--JS-->
+    <script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../lib/popper/popper.min.js"></script>
+    <script src="../lib/datatable/jquery.dataTables.min.js"></script>
+    <script src="../lib/datatable/dataTables.material.min.js"></script>
+    <script src="../lib/multiselect/multiselect.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo.png" width="100" height="50" alt="" class="d-inline-block align-center">
+            <h6 class="d-inline-block align-center">LỊCH THỰC HÀNH</h6>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../images/avt.png" class="user_avt" alt="">
+                    </a>
+                    <div class="dropdown-menu user_dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item font-weight-bold text-primary" href="#">LEE NHAN<span class="text-secondary">'s Dashboard</span></a>
+                        <a class="dropdown-item disabled" href="#"><i class="fas fa-envelope"></i> nhanb1507386@student.ctu.edu.vn</a>
+                        <a class="dropdown-item disabled" href="#"><i class="fas fa-tag"></i> Student</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="sec1" class="mt-5">
+        <div class="container justify-content-center main pt-1">
+            <div class="row">
+                <div class="sidebar row pb-0">
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu1" src="../images/menu/menu 1.jpg" alt="" width="100%">
+                            <p class="p_menu1 font-weight-bold text-secondary">Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu2" src="../images/menu/menu 2.jpg" alt="" width="100%">
+                            <p class="p_menu2 font-weight-bold text-secondary">Danh Sách Sinh Viên</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu3" src="../images/menu/menu 3.jpg" alt="" width="100%">
+                            <p class="p_menu3 font-weight-bold text-secondary">Lớp Thực Hành</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu4" src="../images/menu/menu 4.jpg" alt="" width="100%">
+                            <p class="p_menu4 font-weight-bold text-secondary">Lịch Của Bạn</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu5" src="../images/menu/menu 6.jpg" alt="" width="100%">
+                            <p class="p_menu5 font-weight-bold text-secondary">Điểm Danh</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu6" src="../images/menu/menu 5.jpg" alt="" width="100%">
+                            <p class="p_menu6 font-weight-bold text-secondary">Thông Báo</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="col-lg-12 main pt-4">
+                    <h5 class="font-weight-bold text-primary text-center">Điểm danh sinh viên</h5>
+                </div>
+                <div class="col-lg-6 main pt-2 text-center mx-auto">
+                    <div class="form-group">
+                        <select name="mhp" id="mhp" class="custom_select">
+                            <option value="0">-------Vui lòng chọn lớp thực hành--------</option>
+                            <option value="1">ct11101 - Lập trình căn bản 01</option>
+                            <option value="1">ct11102 - Lập trình căn bản 02</option>
+                            <option value="1">ct11103 - Lập trình căn bản 03</option>
+                            <option value="1">ct11104 - Lập trình căn bản 04</option>
+                            <option value="1">ct11105 - Lập trình căn bản 05</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-12 main">
+                    <table id="example" class="mdl-data-table table-responsive" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>MSSV</th>
+                                <th>Họ tên</th>
+                                <th>Tuần 1</th>
+                                <th>Tuần 2</th>
+                                <th>Tuần 3</th>
+                                <th>Tuần 4</th>
+                                <th>Tuần 5</th>
+                                <th>Tuần 6</th>
+                                <th>Tuần 7</th>
+                                <th>Tuần 8</th>
+                                <th>Tuần 9</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>B1507385</td>
+                                <td>Lê Chí Nguyễn</td>
+                                <td>
+                                    <input type="checkbox" id="t1-1">
+                                    <label for="t1-1"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-2">
+                                    <label for="t1-2"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-3">
+                                    <label for="t1-3"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-4">
+                                    <label for="t1-4"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-5">
+                                    <label for="t1-5"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-6">
+                                    <label for="t1-6"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-7">
+                                    <label for="t1-7"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-8">
+                                    <label for="t1-8"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t1-9">
+                                    <label for="t1-9"> </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>B1507385</td>
+                                <td>Lê Chí Nguyễn</td>
+                                <td>
+                                    <input type="checkbox" id="t2-1">
+                                    <label for="t2-1"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-2">
+                                    <label for="t2-2"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-3">
+                                    <label for="t2-3"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-4">
+                                    <label for="t2-4"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-5">
+                                    <label for="t2-5"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-6">
+                                    <label for="t2-6"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-7">
+                                    <label for="t2-7"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-8">
+                                    <label for="t2-8"> </label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="t2-9">
+                                    <label for="t2-9"> </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>STT</th>
+                                <th>MSSV</th>
+                                <th>Họ tên</th>
+                                <th>Tuần 1</th>
+                                <th>Tuần 2</th>
+                                <th>Tuần 3</th>
+                                <th>Tuần 4</th>
+                                <th>Tuần 5</th>
+                                <th>Tuần 6</th>
+                                <th>Tuần 7</th>
+                                <th>Tuần 8</th>
+                                <th>Tuần 9</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        $(".img_menu5").addClass("menu_active");
+        $(".p_menu5").removeClass("text-secondary");
+        $(".p_menu5").addClass("text-danger");
+
+        $('#example').DataTable({
+            columnDefs: [{
+                targets: [0, 1, 2],
+                className: 'mdl-data-table__cell--non-numeric'
+            }]
+        });
+        $('#testSelect1').multiselect();
+    });
+    </script>
+</body>
+
+</html>

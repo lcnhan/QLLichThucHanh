@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="" type="image/x-icon">
+    <title>Hệ thống lịch thực hành - CIT</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../lib/multiselect/multiselect.css">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/datatable/material.min.css">
+    <link rel="stylesheet" href="../lib/datatable/dataTables.material.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--JS-->
+    <script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../lib/popper/popper.min.js"></script>
+    <script src="../lib/datatable/jquery.dataTables.min.js"></script>
+    <script src="../lib/datatable/dataTables.material.min.js"></script>
+    <script src="../lib/multiselect/multiselect.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo.png" width="100" height="50" alt="" class="d-inline-block align-center">
+            <h6 class="d-inline-block align-center">LỊCH THỰC HÀNH</h6>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../images/avt.png" class="user_avt" alt="">
+                    </a>
+                    <div class="dropdown-menu user_dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item font-weight-bold text-primary" href="#">LEE NHAN<span class="text-secondary">'s Dashboard</span></a>
+                        <a class="dropdown-item disabled" href="#"><i class="fas fa-envelope"></i> nhanb1507386@student.ctu.edu.vn</a>
+                        <a class="dropdown-item disabled" href="#"><i class="fas fa-tag"></i> Student</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="sec1" class="mt-5">
+        <div class="container justify-content-center main pt-1">
+            <div class="row">
+                <div class="sidebar row pb-0">
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu1" src="../images/menu/menu 1.jpg" alt="" width="100%">
+                            <p class="p_menu1 font-weight-bold text-secondary">Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu2" src="../images/menu/menu 2.jpg" alt="" width="100%">
+                            <p class="p_menu2 font-weight-bold text-secondary">Danh Sách Sinh Viên</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu3" src="../images/menu/menu 3.jpg" alt="" width="100%">
+                            <p class="p_menu3 font-weight-bold text-secondary">Lớp Thực Hành</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu4" src="../images/menu/menu 4.jpg" alt="" width="100%">
+                            <p class="p_menu4 font-weight-bold text-secondary">Lịch Của Bạn</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu5" src="../images/menu/menu 6.jpg" alt="" width="100%">
+                            <p class="p_menu5 font-weight-bold text-secondary">Điểm Danh</p>
+                        </a>
+                    </div>
+                    <div class="menu_item col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                        <a href="">
+                            <img class="img_menu6" src="../images/menu/menu 5.jpg" alt="" width="100%">
+                            <p class="p_menu6 font-weight-bold text-secondary">Thông Báo</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="col-lg-12 main pt-4">
+                    <h5 class="font-weight-bold text-primary text-center">Danh sách lớp thực hành <button data-toggle="modal" data-target="#AddClass" class="btn_contrl text-primary" data-toggle="tooltip" title="Đề nghị mở lớp thực hành mới"><i class="fas fa-plus-circle"></i></button></h5>
+                </div>
+                <div class="col-lg-12 main">
+                    <table id="example" class="mdl-data-table table-responsive" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã lớp</th>
+                                <th>Tên lớp</th>
+                                <th>Tín chỉ</th>
+                                <th>Số tiết TH</th>
+                                <th>Học kỳ</th>
+                                <th>Năm học</th>
+                                <th>Số lượng SV</th>
+                                <th>Trạng thái</th>
+                                <th>Control</th>
+                                <!-- <th>Control</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>CT12301</td>
+                                <td>Lập trình căn bản</td>
+                                <td>3TC</td>
+                                <td>30 Tiết</td>
+                                <td>HK1</td>
+                                <td>2019-2020</td>
+                                <td>69</td>
+                                <td><span class="badge badge-pill badge-danger px-4 py-2">Đã đóng</span></td>
+                                <td>
+                                    <button class="btn_contrl btn_edit" disabled><span class="text-success"><i class="fas fa-pen"></i></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>CT12302</td>
+                                <td>Lập trình căn bản</td>
+                                <td>3TC</td>
+                                <td>30 Tiết</td>
+                                <td>HK1</td>
+                                <td>2019-2020</td>
+                                <td>70</td>
+                                <td><span class="badge badge-pill badge-success px-4 py-2">Đang mở</span></td>
+                                <td>
+                                    <button class="btn_contrl btn_edit"><span class="text-success"><i class="fas fa-pen"></i></span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã lớp</th>
+                                <th>Tên lớp</th>
+                                <th>Tín chỉ</th>
+                                <th>Số tiết TH</th>
+                                <th>Học kỳ</th>
+                                <th>Năm học</th>
+                                <th>Số lượng SV</th>
+                                <th>Trạng thái</th>
+                                <th>Control</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="AddClass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary">Đề nghị mở lớp thực hành mới</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="row">
+                        <div class="form-group col-12 col-sm-4 col-md-4 col-lg-3 align-self-center pr-0">
+                            <i class="fas fa-door-open font-weight-bold text-secondary"></i>
+                            <span class="font-weight-bold text-secondary">Mã lớp học phần</span>
+                        </div>
+                        <div class="form-group col-12 col-sm-8 col-md-8 col-lg-9">
+                            <select name="mhp" id="mhp" class="custom_select">
+                                <option value="1">ct11101 - Lập trình căn bản 01</option>
+                                <option value="1">ct11102 - Lập trình căn bản 02</option>
+                                <option value="1">ct11103 - Lập trình căn bản 03</option>
+                                <option value="1">ct11104 - Lập trình căn bản 04</option>
+                                <option value="1">ct11105 - Lập trình căn bản 05</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 col-sm-4 col-md-4 col-lg-4">
+                            <label>Tín chỉ: <span class="text-secondary font-weight-bold">3TC</span></label>
+                        </div>
+                        <div class="form-group col-4 col-sm-4 col-md-4 col-lg-4">
+                            <label>Học kỳ: <span class="text-secondary font-weight-bold">HK1</span></label>
+                        </div>
+                        <div class="form-group col-4 col-sm-4 col-md-4 col-lg-4">
+                            <label>Năm học: <span class="text-secondary font-weight-bold">2019 - 2020</span></label>
+                        </div>
+                        <div class="line"></div>
+                        <div class="form-group col-12 col-sm-4 col-md-4 col-lg-3 align-self-center pr-0">
+                            <i class="fab fa-accusoft font-weight-bold text-secondary"></i>
+                            <span class="font-weight-bold text-secondary"> Yêu cầu phần mềm</span>
+                        </div>
+                        <div class="form-group col-12 col-sm-8 col-md-8 col-lg-9">
+                            <select name="soft" id="soft" class="custom_select">
+                                <option value="1">MySQL 2008</option>
+                                <option value="1">Android Studios</option>
+                                <option value="1">Visual Studio</option>
+                                <option value="1">Eclipse</option>
+                                <option value="1">Netbean</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 col-sm-4 col-md-4 col-lg-4">
+                            <label for="dotw" class="pr-1">Thứ</label> <!-- dotw = Days of the week -->
+                            <select name="dotw" id="dotw" class="custom_select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                                <option value="1">5</option>
+                                <option value="1">6</option>
+                                <option value="1">7</option>
+                                <option value="1">CN</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 col-sm-4 col-md-4 col-lg-4">
+                            <label for="session" class="pr-1">Buổi</label> <!-- dotw = Days of the week -->
+                            <select name="session" id="session" class="custom_select">
+                                <option value="1">Sáng</option>
+                                <option value="1">Chiều</option>
+                                <option value="1">Tối</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 col-sm-4 col-md-4 col-lg-4">
+                            <label for="week" class="pr-1">Tuần</label> <!-- dotw = Days of the week -->
+                            <select id='testSelect1' multiple class="custom_select">
+                                <option value='1'>Tuần 1</option>
+                                <option value='2'>Tuần 2</option>
+                                <option value='3'>Tuần 3</option>
+                                <option value='4'>Tuần 4</option>
+                                <option value='5'>Tuần 5</option>
+                                <option value='6'>Tuần 6</option>
+                                <option value='7'>Tuần 7</option>
+                                <option value='8'>Tuần 8</option>
+                                <option value='9'>Tuần 9</option>
+                                <option value='10'>Tuần 10</option>
+                                <option value='11'>Tuần 11</option>
+                                <option value='12'>Tuần 12</option>
+                                <option value='13'>Tuần 13</option>
+                                <option value='14'>Tuần 14</option>
+                                <option value='15'>Tuần 15</option>
+                                <option value='16'>Tuần 16</option>
+                                <option value='17'>Tuần 17</option>
+                                <option value='18'>Tuần 18</option>
+                                <option value='19'>Tuần 19</option>
+                                <option value='20'>Tuần 20</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <button type="submit" class="btn btn-primary  mr-2 float-right"><i class="fas fa-paper-plane"></i> Gửi yêu cầu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        $(".img_menu3").addClass("menu_active");
+        $(".p_menu3").removeClass("text-secondary");
+        $(".p_menu3").addClass("text-danger");
+
+        $('#example').DataTable({
+            columnDefs: [{
+                targets: [0, 1, 2],
+                className: 'mdl-data-table__cell--non-numeric'
+            }]
+        });
+        $('#testSelect1').multiselect();
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+html,
+body {
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    margin-top: 2em;
+    background-color: #fff;
+}
+
+.line{
+    width: 100%;
+    padding: .1em;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 .1em 0 .1em;
+}
+
+body {
+    background-color: #dcdcdc !important;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.main {
+    background-color: #fff !important;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs_week li {
+    padding: .5em;
+    transition: .3s;
+}
+
+.tabs_week {
+    transition: .3s;
+}
+
+.tabs_week li a {
+    text-decoration: none;
+    color: #909090;
+    transition: .3s;
+}
+
+.tabs_week .active {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: .5em;
+    transition: .3s;
+}
+
+
+/*==========================================================NAV BAR*/
+.user_avt {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+
+.user_dropdown {
+    right: 0 !important;
+}
+
+/*==========================================================Custom*/
+
+.custom_select{
+    width: 70%;
+    height: 2.5em;
+    font-size: 15px;
+    color: #6c757d;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #6c757d;
+    outline: none;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin-left: .7em;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #3154f3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*select group*/
+.selectgroup {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.selectgroup-item {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    font-weight: 400 !important;
+}
+
+.selectgroup-item+.selectgroup-item {
+    margin-left: -1px;
+}
+
+.selectgroup-item:not(:first-child) .selectgroup-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.selectgroup-item:not(:last-child) .selectgroup-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.selectgroup-input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.selectgroup-button {
+    display: block;
+    border: 1px solid rgba(0, 40, 100, .12);
+    text-align: center;
+    padding: .375rem 1rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #9aa0ac;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    line-height: 1.5rem;
+    min-width: 2.375rem;
+}
+
+.selectgroup-button-icon {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1rem;
+}
+
+.selectgroup-input:checked+.selectgroup-button {
+    border-color: #1572e8;
+    z-index: 1;
+    color: #1572e8;
+    background: rgba(21, 114, 232, .15);
+}
+
+.selectgroup-input:focus+.selectgroup-button {
+    border-color: #1572e8;
+    z-index: 2;
+    color: #1572e8;
+    box-shadow: 0 0 0 2px rgba(21, 114, 232, .25);
+}
+
+.selectgroup-pills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.selectgroup-pills .selectgroup-item {
+    margin-right: .5rem;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}
+
+.selectgroup-pills .selectgroup-button {
+    border-radius: 50px !important;
+}
+
+.selectgroup.selectgroup-primary .selectgroup-input:checked+.selectgroup-button {
+    border-color: #1572e8;
+    color: #1572e8;
+    background: rgba(21, 114, 232, .15);
+}
+
+.selectgroup.selectgroup-primary .selectgroup-input:focus+.selectgroup-button {
+    border-color: #1572e8;
+    color: #1572e8;
+    box-shadow: 0 0 0 2px rgba(21, 114, 232, .25);
+}
+
+.selectgroup.selectgroup-secondary .selectgroup-input:checked+.selectgroup-button {
+    border-color: #6861ce;
+    color: #6861ce;
+    background: rgba(104, 97, 206, .15);
+}
+
+.selectgroup.selectgroup-secondary .selectgroup-input:focus+.selectgroup-button {
+    border-color: #6861ce;
+    color: #6861ce;
+    box-shadow: 0 0 0 2px rgba(104, 97, 206, .25);
+}
+
+.selectgroup.selectgroup-info .selectgroup-input:checked+.selectgroup-button {
+    border-color: #48abf7;
+    color: #48abf7;
+    background: rgba(72, 171, 247, .15);
+}
+
+.selectgroup.selectgroup-info .selectgroup-input:focus+.selectgroup-button {
+    border-color: #48abf7;
+    color: #48abf7;
+    box-shadow: 0 0 0 2px rgba(72, 171, 247, .25);
+}
+
+.selectgroup.selectgroup-success .selectgroup-input:checked+.selectgroup-button {
+    border-color: #31ce36;
+    color: #31ce36;
+    background: rgba(49, 206, 54, .15);
+}
+
+.selectgroup.selectgroup-success .selectgroup-input:focus+.selectgroup-button {
+    border-color: #31ce36;
+    color: #31ce36;
+    box-shadow: 0 0 0 2px rgba(49, 206, 54, .25);
+}
+
+.selectgroup.selectgroup-warning .selectgroup-input:checked+.selectgroup-button {
+    border-color: #ffad46;
+    color: #ffad46;
+    background: rgba(255, 173, 70, .15);
+}
+
+.selectgroup.selectgroup-warning .selectgroup-input:focus+.selectgroup-button {
+    border-color: #ffad46;
+    color: #ffad46;
+    box-shadow: 0 0 0 2px rgba(255, 173, 70, .25);
+}
+
+.selectgroup.selectgroup-danger .selectgroup-input:checked+.selectgroup-button {
+    border-color: #f25961;
+    color: #f25961;
+    background: rgba(242, 89, 97, .15);
+}
+
+.selectgroup.selectgroup-danger .selectgroup-input:focus+.selectgroup-button {
+    border-color: #f25961;
+    color: #f25961;
+    box-shadow: 0 0 0 2px rgba(242, 89, 97, .25);
+}

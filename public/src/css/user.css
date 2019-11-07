@@ -1,0 +1,67 @@
+.menu_item a{
+	text-decoration: none !important;
+	transition: .3s;
+}
+
+.menu_item img{
+}
+
+.menu_item p{
+	transition: .3s;
+}
+
+.menu_item a:hover p{
+	color: #de1212 !important;
+}
+
+.menu_item{
+	padding: .2em !important;
+}
+
+.sidebar{
+	margin: 0 !important;
+	padding: 1em;
+}
+
+.menu_active{
+	filter: grayscale(1);
+}
+
+.mdl-grid{
+	margin: 0 !important;
+	width: 100% !important;
+}
+
+.input-sm{
+	margin: .4em !important;
+}
+
+input.input-sm{
+	outline: none !important;
+}
+
+.btn_contrl{
+	border: none;
+	background-color: transparent;
+	outline: none !important;
+	transition: .3s;
+}
+
+.btn_contrl:hover{
+	transform: scale(1.2);
+}
+
+.badge{
+	font-size: 90% !important;
+}
+
+
+.noti{
+	background-color: #ececec;
+	margin: 1em;
+	padding: 1em;
+}
+
+.noti_bell{
+	border-right: 1px solid #de1212;
+}

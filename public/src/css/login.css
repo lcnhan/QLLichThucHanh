@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+}
+
+body{
+	/*background-color: #dcdcdc !important;*/
+	background-image: url("../images/bg2.jpg");
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.login_panel{
+	height: 60vh;
+	border-radius: 7px 0 0 7px;
+	box-shadow: 0 0 20px 0px #212121;
+	background-color: #f8f9fa;
+}
+
+.login_panel .log{
+	font-weight: bold;
+	font-size: 20px;
+	color: #de1212;
+}
+
+.login_panel .lockicon{
+	background-image: url("../images/lock.gif");
+	width: 7em;
+    height: 7em;
+    background-size: 150%;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 50em;
+    margin: 1em 0 1em 0;
+    border: 2px solid #3F51B5;
+    border-style: dashed;
+
+}
+.login_panel .right_pn{
+	background-color: #292b40 !important;
+}
+
+.login_panel .right_pn .title{
+	color: #fff;
+	margin: 1em 0 1em 0;
+}
+
+.login_panel .right_pn a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.login_panel .left_pn .title{
+	font-size: 20px;
+    text-transform: uppercase;
+    color: #2a3eab;
+    font-weight: 400;
+}
+
+.login_panel .left_pn .des{
+	color: #2a3eab;
+}
+
+.title{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.footer_link a{
+	text-decoration: none !important;
+	color: #de1212 !important;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.footer_link a:hover{
+	text-decoration: none !important;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+
+/*Floating label*/
+::placeholder {
+  color: #ff0000 !important;
+  opacity: 1 !important;
+}
+
+.form-group input{
+    height: 3em !important;
+    padding: 0 1em 0 1em !important;
+    transition: .3s !important;
+    outline: none !important;
+    background: transparent !important;
+    color: #fff !important;
+    border: none !important;
+    border-bottom: 1px solid !important;
+    cursor: pointer !important;
+}
+
+.form-control{
+	outline: none !important;
+	border-radius: 0 !important;
+}
+
+.form-group input:focus{
+	border-bottom: 1px solid #0099cc !important;
+}
+
+.btn_login{
+	background-color: #2a3eab;
+	border: none;
+	border-radius: 30px;
+	width: 80%;
+	height: 3em;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .3s;
+	outline:none;
+}
+
+.btn_login:hover{
+	outline:none;
+	background-color: #4285f4;
+}
